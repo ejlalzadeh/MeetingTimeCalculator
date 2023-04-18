@@ -43,6 +43,16 @@ static void PrintDayTimeRanges(BitArray day, string title)
     Console.WriteLine("--------------------------------------------");
 }
 
+static void PrintDayElements(BitArray day, string title)
+{
+    Console.WriteLine(title);
+
+    for (int i = 0; i < day.Length; i++)
+        Console.WriteLine($"{i} - {day[i]}");
+
+    Console.WriteLine("--------------------------------------------");
+}
+
 #region MainAlgorithmFunctions
 
 static BitArray AddEventsToDay(BitArray day, List<Event> events)
@@ -88,7 +98,7 @@ static List<TimeRange> ConvertBitArrayToTimeRanges(BitArray day)
         }
         else
         {
-            if (startElement != 0 && counter > 1)
+            if (startElement != 0)
             {
                 TimeSpan start = TimeSpan.FromHours(startElement / 4D).Subtract(TimeSpan.FromMinutes(15));
 

@@ -21,6 +21,9 @@ public class MockProvider
 
                 new AvailableTime(new TimeSpan(15, 45, 0),
                     new TimeSpan(16, 30, 0)),
+
+                new AvailableTime(new TimeSpan(19, 15, 0),
+                    new TimeSpan(21, 15, 0)),
             };
         }
 
@@ -36,6 +39,9 @@ public class MockProvider
 
                 new AvailableTime(new TimeSpan(16, 15, 0),
                     new TimeSpan(17, 30, 0)),
+
+                new AvailableTime(new TimeSpan(19, 15, 0),
+                    new TimeSpan(21, 15, 0)),
             };
         }
 
@@ -48,6 +54,9 @@ public class MockProvider
 
                 new AvailableTime(new TimeSpan(13, 00, 0),
                     new TimeSpan(18, 30, 0)),
+
+                new AvailableTime(new TimeSpan(19, 15, 0),
+                    new TimeSpan(21, 15, 0)),
             };
         }
 
@@ -63,6 +72,9 @@ public class MockProvider
 
                 new AvailableTime(new TimeSpan(17, 00, 0),
                     new TimeSpan(18, 30, 0)),
+
+                new AvailableTime(new TimeSpan(19, 15, 0),
+                    new TimeSpan(21, 15, 0)),
             };
         }
 
