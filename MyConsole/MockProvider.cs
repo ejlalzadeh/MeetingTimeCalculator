@@ -11,7 +11,7 @@ public class MockProvider
             return new List<AvailableTime>
             {
                 new AvailableTime(new TimeSpan(08, 0, 0),
-                    new TimeSpan(08, 45, 0)),
+                    new TimeSpan(09, 00, 0)),
 
                 new AvailableTime(new TimeSpan(10, 0, 0),
                     new TimeSpan(11, 00, 0)),
@@ -31,17 +31,8 @@ public class MockProvider
         {
             return new List<AvailableTime>
             {
-                new AvailableTime(new TimeSpan(10, 0, 0),
-                    new TimeSpan(11, 30, 0)),
-
-                new AvailableTime(new TimeSpan(13, 0, 0),
-                    new TimeSpan(14, 0, 0)),
-
-                new AvailableTime(new TimeSpan(16, 15, 0),
-                    new TimeSpan(17, 30, 0)),
-
-                new AvailableTime(new TimeSpan(19, 15, 0),
-                    new TimeSpan(21, 15, 0)),
+                new AvailableTime(new TimeSpan(08, 0, 0),
+                    new TimeSpan(21, 30, 0)),
             };
         }
 
@@ -96,6 +87,9 @@ public class MockProvider
 
                 new Event(new DateTime(2023, 04, 18, 15, 30, 00),
                     new DateTime(2023, 04, 18, 17, 00, 00)),
+
+                new Event(new DateTime(2023, 04, 18, 20, 30, 00),
+                    new DateTime(2023, 04, 18, 21, 00, 00)),
             };
         }
 
